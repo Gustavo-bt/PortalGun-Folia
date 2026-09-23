@@ -1,0 +1,111 @@
+PortalGunMode: INFINITY # [INFINITY: Each Portal Gun created has its own portal. ONE_TYPE_PER_PLAYER: The player can only have one Portal Gun of each type. ONE_PORTAL_PER_PLAYER: The Player can only have one Portal Gun, if he gets another Portal Gun the previous portals will be disabled.]
+Interdimensional: true
+GrabEntity: false
+CameraChangeDirection: true
+PortalCraftable: true
+PortalShootRange: 80
+GrabEntitiesListMode: DISABLED # You can switch to modes: BLACKLIST, WHITELIST and DISABLED
+GrabEntitiesList: # EntityType List in: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+  - ARMOR_STAND
+WhiteList: true
+WhiteListBlocks:
+- WHITE_CONCRETE
+- WHITE_WOOL
+- QUARTZ_BLOCK
+- SMOOTH_QUARTZ
+PortalMapID: # Don't Change! But if the portals don't render correctly, replace all values with -1
+  blue:
+    up: -1
+    down: -1
+  orange:
+    up: -1
+    down: -1
+  aqua:
+    up: -1
+    down: -1
+  red:
+    up: -1
+    down: -1
+  yellow:
+    up: -1
+    down: -1
+  purple:
+    up: -1
+    down: -1
+PortalGunCrafts:
+  chell:
+    Name: &fPortal Gun
+    Craft: true
+    Shape:
+    - AIG
+    - WNI
+    - WWA
+    Ingredients:
+    - I:IRON_INGOT
+    - G:GLASS_PANE
+    - W:WHITE_CONCRETE
+    - N:NETHER_STAR
+  atlas:
+    Name: &fAtlas Portal Gun
+    Craft: true
+    Shape:
+    - AIG
+    - YNI
+    - WWA
+    Ingredients:
+    - I:IRON_INGOT
+    - G:GLASS_PANE
+    - W:WHITE_CONCRETE
+    - Y:YELLOW_CONCRETE
+    - N:NETHER_STAR
+  p_body:
+    Name: &fP-Body Portal Gun
+    Craft: true
+    Shape:
+    - AIG
+    - LNI
+    - WWA
+    Ingredients:
+    - I:IRON_INGOT
+    - G:GLASS_PANE
+    - W:WHITE_CONCRETE
+    - L:LIGHT_BLUE_CONCRETE
+    - N:NETHER_STAR
+  potatos:
+    Name: &fPotatOS Portal Gun
+    Craft: true
+    Shape:
+    - PIG
+    - WNI
+    - WWA
+    Ingredients:
+    - I:IRON_INGOT
+    - G:GLASS_PANE
+    - W:WHITE_CONCRETE
+    - P:POTATO
+    - N:NETHER_STAR
+PortalGunResources:
+  chell:
+    Material: WOODEN_HOE
+    CustomModelData:
+      Normal: 1
+      Shoot1: 2
+      Shoot2: 3
+  atlas:
+    Material: IRON_HOE
+    CustomModelData:
+      Normal: 1
+      Shoot1: 2
+      Shoot2: 3
+  p_body:
+    Material: STONE_HOE
+    CustomModelData:
+      Normal: 1
+      Shoot1: 2
+      Shoot2: 3
+  potatos:
+    Material: GOLDEN_HOE
+    CustomModelData:
+      Normal: 1
+      Shoot1: 2
+      Shoot2: 3

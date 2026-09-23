@@ -1,0 +1,7 @@
+name: PortalGun
+main: pl.by.fentisdev.portalgun.PortalGunMain
+version: '${project.version}'
+author: FentisDeveloper
+api-version: 1.14
+softdepend: [WorldGuard,GriefPrevention,NBTAPI]
+folia-supported: true
